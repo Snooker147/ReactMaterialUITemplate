@@ -1,0 +1,159 @@
+{
+	"MaterialImportDialog": {
+		"prefix": "MaterialImportDialog",
+		"body": [
+			"import Button from \"@material-ui/core/Button\";",
+			"import Dialog from \"@material-ui/core/Dialog\";",
+			"import DialogTitle from \"@material-ui/core/DialogTitle\";",
+			"import DialogContent from \"@material-ui/core/DialogContent\";",
+			"import DialogContentText from \"@material-ui/core/DialogContentText\";",
+			"import DialogActions from \"@material-ui/core/DialogActions\";",
+		]
+	},
+	"MaterialImportList": {
+		"prefix": "MaterialImportList",
+		"body": [
+			"import List from \"@material-ui/core/List\";",
+			"import ListItem from \"@material-ui/core/ListItem\";",
+			"import ListItemText from \"@material-ui/core/ListItemText\";",
+			"import ListItemSecondaryAction from \"@material-ui/core/ListItemSecondaryAction\";",
+		]
+	},
+	"MaterialImportMenu": {
+		"prefix": "MaterialImportMenu",
+		"body": [
+			"import List from \"@material-ui/core/Menu\";",
+			"import ListItem from \"@material-ui/core/MenuItem\";",
+		]
+	},
+	"MaterialImportTypography": {
+		"prefix": "MaterialImportTypography",
+		"body": [
+			"import Typography from \"@material-ui/core/Typography\";"
+		]
+	},
+	"MaterialImportTooltip": {
+		"prefix": "MaterialImportTooltip",
+		"body": [
+			"import Tooltip from \"@material-ui/core/Tooltip\";"
+		]
+	},
+	"MaterialImportTextField": {
+		"prefix": "MaterialImportTextField",
+		"body": [
+			"import TextField from \"@material-ui/core/TextField\";"
+		]
+	},
+	"MaterialImportCheckbox": {
+		"prefix": "MaterialImportCheckbox",
+		"body": [
+			"import Checkbox from \"@material-ui/core/Checkbox\";"
+		]
+	},
+	"MaterialImportCircularProgress": {
+		"prefix": "MaterialImportCircularProgress",
+		"body": [
+			"import CircularProgress from \"@material-ui/core/CircularProgress\";"
+		]
+	},
+	"MaterialImportButton": {
+		"prefix": "MaterialImportButton",
+		"body": [
+			"import Button from \"@material-ui/core/Button\";"
+		]
+	},
+	"MaterialImportPaper": {
+		"prefix": "MaterialImportPaper",
+		"body": [
+			"import Paper from \"@material-ui/core/Paper\";"
+		]
+	},
+	"MaterialImportIcons": {
+		"prefix": "MaterialImportIcons",
+		"body": [
+			"import Icon from \"@material-ui/core/Icon\";",
+			"import IconButton from \"@material-ui/core/IconButton\";",			
+		]
+	},
+	"NewClass": {
+		"prefix": "NewClass",
+		"body": [
+			"export default class ${TM_FILENAME_BASE}",
+			"{",
+			"\t",
+			"\tpublic constructor()",
+			"\t{",
+			"\t\t$1",
+			"\t}",
+			"\t",
+			"}"
+		]
+	},
+	"CreateGetter": {
+		"prefix": "CreateGetter",
+		"body": "public get $1() { return this.m_$1; }"
+	},
+	"ImportImage": {
+		"prefix": "ImportImage",
+		"body": "import * as NewImage from \"$1\";"
+	},
+	"ImportEverythingAs": {
+		"prefix": "ImportEverythingAs",
+		"body": "import * as $1 from \"package\";"
+	},
+	"ImportReact": {
+		"prefix": "ImportReact",
+		"body": "import * as React from \"react\";"
+	},
+	"ImportReactDOM": {
+		"prefix": "ImportReactDOM",
+		"body": "import * as ReactDOM from \"react-dom\";"
+	},
+	"NewReactComponent": {
+		"prefix": "NewReactComponent",
+		"body": [
+			"import * as React from \"react\";",
+			"",
+			"// Props Structure",
+			"interface Props { }",
+			"// State Structure",
+			"interface State { }",
+			"",
+			"export default class ${TM_FILENAME_BASE} extends React.Component<Props, State>",
+			"{",
+			"\t",
+			"\tpublic constructor(props: Props)",
+			"\t{",
+			"\t\tsuper(props);",
+			"\t}",
+			"\t",
+			"\tpublic render()",
+			"\t{",
+			"\t\treturn (",
+			"\t\t\t<div>",
+			"\t\t\t\t$1",
+			"\t\t\t</div>",
+			"\t\t);",
+			"\t}",
+			"",
+			"}"
+		]
+	},
+	"NewReactFuncComponent": {
+		"prefix": "NewReactFuncComponent",
+		"body": [
+			"import * as React from \"react\";",
+			"",
+			"// Props Structure",
+			"export interface ${TM_FILENAME_BASE}Props { }",
+			"",
+			"export default (p: ${TM_FILENAME_BASE}Props) => {",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t$1",
+			"\t\t</div>",
+			"\t);",
+			"};",
+		]
+	}
+}

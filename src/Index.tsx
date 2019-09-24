@@ -6,10 +6,10 @@ import ThemeProvider from "@material-ui/styles/ThemeProvider";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import StylesProvider from "@material-ui/styles/StylesProvider";
 
-import "./Polyfill";
-import "./Index.scss";
+import SampleComponent from "./components/SampleComponent";
 
-import Header from "./components/Header";
+import "./Polyfill";
+import "./Index.css";
 
 const theme = createMuiTheme({
     palette: {
@@ -30,7 +30,7 @@ class Index extends React.Component
                 <ThemeProvider theme={theme}>
                     <CssBaseline />
 
-                    <Header />
+                    <SampleComponent />
                     
                 </ThemeProvider>
             </StylesProvider>

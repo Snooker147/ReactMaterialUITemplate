@@ -59,7 +59,7 @@ module.exports = {
             },
 
             {
-                test: /\.scss$/,
+                test: /\.css$/,
                 use: [
                     isRelease ? MiniCssExtractPlugin.loader : "style-loader",
                     {
@@ -68,8 +68,7 @@ module.exports = {
                             importLoaders: 1
                         }
                     },
-                    "postcss-loader",
-                    "sass-loader"
+                    "postcss-loader"
                 ]
             },
 

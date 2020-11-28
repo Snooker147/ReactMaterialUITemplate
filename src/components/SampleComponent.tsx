@@ -1,51 +1,27 @@
 import * as React from "react";
-import { WithStyles, withStyles, createStyles } from "@material-ui/styles";
-import Component from "../base/Component";
+import withStyles, { WithStyles } from "@material-ui/styles/withStyles";
+import createStyles from "@material-ui/styles/createStyles";
+
+import Box from "@material-ui/core/Box";
+import Typography from "@material-ui/core/Typography";
 
 // Props Structure
 type Props = WithStyles<typeof Style> & { }
 
-// State Structure
-type State = { }
-
-class SampleComponent extends Component<Props, State>
+const SampleComponent: React.FunctionComponent<Props> = (props) => 
 {
-    private classes = this.props.classes;
-    
-    public constructor(props: Props)
-    {
-        super(props);
-    }
-    
-    public render()
-    {
-        return (
-            <div className={this.classes.someClass}>
-                <div>
-                    A Styled <span>Component!</span>
-                </div>
-
-                <div className={this.classes.anotherClass}>
-                    Second class
-                </div>
-            </div>
-        );
-    }
-
+    return (
+        <Box my={2}>
+            <Typography className={props.classes.centerText}>
+                Hello World!
+            </Typography>
+        </Box>
+    )
 }
 
 const Style = createStyles({
-    someClass: {
-        backgroundColor: "red",
-        color: "white",
-        fontFamily: "RobotoFont",
-        "& span": {
-            color: "green"
-        }
-    },
-    anotherClass: {
+    centerText: {
         textAlign: "center",
-        backgroundColor: "rgba(255, 255, 0, 0.5)",
     }
 });
 
